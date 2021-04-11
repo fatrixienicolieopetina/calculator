@@ -6,6 +6,7 @@ body {
 
 .clear {
     background-color: rgb(241, 163, 189);
+    grid-column: auto / span 2;
 }
 
 .delete {
@@ -57,6 +58,10 @@ footer {
     margin: auto;
     height: 90%;
     width: 40em;
+}
+
+.operator {
+    background: aquamarine;
 }
 
 .results-container {

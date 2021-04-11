@@ -26,7 +26,9 @@ const Calculator = () => {
             }
 
             if(resultText.length < 24) {
-                resultText = resultText.concat(this.textContent);
+                if(!(resultText.includes('.') && this.textContent == '.')) {
+                    resultText = resultText.concat(this.textContent);   
+                }
             }
             
             shouldClearResultsContainer = false;
